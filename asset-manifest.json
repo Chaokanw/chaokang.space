@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/chaokang.space/static/css/main.f6077072.chunk.css",
-    "main.js": "/chaokang.space/static/js/main.d89e4688.chunk.js",
-    "main.js.map": "/chaokang.space/static/js/main.d89e4688.chunk.js.map",
+    "main.js": "/chaokang.space/static/js/main.d98d5606.chunk.js",
+    "main.js.map": "/chaokang.space/static/js/main.d98d5606.chunk.js.map",
     "runtime-main.js": "/chaokang.space/static/js/runtime-main.8276cabf.js",
     "runtime-main.js.map": "/chaokang.space/static/js/runtime-main.8276cabf.js.map",
     "static/js/2.ff5b789f.chunk.js": "/chaokang.space/static/js/2.ff5b789f.chunk.js",
     "static/js/2.ff5b789f.chunk.js.map": "/chaokang.space/static/js/2.ff5b789f.chunk.js.map",
     "index.html": "/chaokang.space/index.html",
-    "precache-manifest.9a87332fe1a3feb9108bb09b94c2e8b7.js": "/chaokang.space/precache-manifest.9a87332fe1a3feb9108bb09b94c2e8b7.js",
+    "precache-manifest.ae5378c2a9ca5863deca684d4a8c56e2.js": "/chaokang.space/precache-manifest.ae5378c2a9ca5863deca684d4a8c56e2.js",
     "service-worker.js": "/chaokang.space/service-worker.js",
     "static/css/main.f6077072.chunk.css.map": "/chaokang.space/static/css/main.f6077072.chunk.css.map",
     "static/js/2.ff5b789f.chunk.js.LICENSE.txt": "/chaokang.space/static/js/2.ff5b789f.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8276cabf.js",
     "static/js/2.ff5b789f.chunk.js",
     "static/css/main.f6077072.chunk.css",
-    "static/js/main.d89e4688.chunk.js"
+    "static/js/main.d98d5606.chunk.js"
   ]
 }

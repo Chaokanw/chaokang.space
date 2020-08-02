@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1e5c33ecd77ba1ab62443162775e57a",
+    "revision": "32dce0c12800fbe6361e83f5e18fc470",
     "url": "/chaokang.space/index.html"
   },
   {
-    "revision": "cf8b513dfa598b4a26d9",
+    "revision": "10b0bb2e3b7aff440fb2",
     "url": "/chaokang.space/static/css/main.f6077072.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chaokang.space/static/js/2.ff5b789f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf8b513dfa598b4a26d9",
-    "url": "/chaokang.space/static/js/main.d89e4688.chunk.js"
+    "revision": "10b0bb2e3b7aff440fb2",
+    "url": "/chaokang.space/static/js/main.d98d5606.chunk.js"
   },
   {
     "revision": "35c021e08e567cd32924",
