@@ -11,11 +11,8 @@ class MainPage extends React.Component {
                 </p>
 
             <p >
-                I am a student at the University of Southern California.
-                I write &nbsp; 
-                <a class = "highlight" href = "#">code</a> &nbsp;
-                and take &nbsp; 
-                <a class = "highlight" href = "#" >photos</a> &nbsp;. 
+                Sorry! This site is currently under construction. 
+                Please check back later.
             </p>
 
             </div>
