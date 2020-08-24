@@ -8,7 +8,7 @@ let contactInfo = {
     "email":"chaokang.wu@hotmail.com"
 }
 
-class ContactDiv extends React.Component {
+class Contact extends React.Component {
     render() {
         return ( 
             <div id="contact-div" target="_blank">
@@ -33,4 +33,4 @@ class ContactDiv extends React.Component {
 
 }
 
-export default ContactDiv
+export default Contact

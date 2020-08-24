@@ -1,5 +1,6 @@
 import React from 'react';
-import ContactDiv from './ContactDiv'
+import Contact from './Contact'
+import {Link} from 'react-router-dom'
 
 
 
@@ -11,7 +12,7 @@ class MainPage extends React.Component {
                 <h1> Hello, I 'm <span className="highlight yellow">Chaokang</span>.</h1> 
                 <p className = "heading" >
                     You can also call me Vincent. 
-                    </p>
+                </p>
 
                 <p>
                     I'm a graduate student at the&nbsp;
@@ -21,19 +22,19 @@ class MainPage extends React.Component {
                 </p>
 
                 <p>
-                    You can find some of my project demos <a href="#" className="highlight blue">here</a>:
+                    You can find some of my project demos <Link to="/projects" className="highlight blue">here</Link>:
                 </p>
 
                 <p>
-                    Outside of programming, I also enjoy travel, skiing, editing videos, and taking photos  
+                    Outside of programming, I also enjoy travel, skiing, editing videos, and taking photos.  
                 </p>
 
 
                 <p>
                     Please feel free to contact me in the following ways:
                 </p>
-                <ContactDiv>
-                </ContactDiv>
+                <Contact>
+                </Contact>
 
 
             </div>

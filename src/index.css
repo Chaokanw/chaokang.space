@@ -72,11 +72,16 @@ p {
     background-color: rgba(251, 255, 18, 0.8);
 }
 
+
 .blue:after{
     background-color: rgba(65, 234, 212, 0.8);
 }
 
-.pink::after{
+.pink:after{
+    background-color: rgba(255, 32, 110, 0.8);
+}
+
+.pink:hover:after{
     background-color: rgba(255, 32, 110, 0.8);
 }
 
