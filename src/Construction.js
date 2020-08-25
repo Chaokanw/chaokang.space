@@ -6,7 +6,7 @@ class Construction extends React.Component {
         return ( 
             <div>
                 <p >
-                    Sorry! This site is currently under construction. 
+                    Sorry! This page is currently under construction. 
                 </p>
 
                 <p>

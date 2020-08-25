@@ -4,6 +4,7 @@ import MainPage from './MainPage';
 import ProjectsPage from './ProjectsPage';
 import PhotosPage from './PhotosPage';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import AboutPage from './AboutPage';
 
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={MainPage} /> 
                     <Route path="/projects" component={ProjectsPage} /> 
-                    <Route path="/photos" exact component={PhotosPage} />
+                    <Route path="/photos" component={PhotosPage} />
+                    <Route path="/about" component={AboutPage} />
+
                 </Switch>
    
             </Router>

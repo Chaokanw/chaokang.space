@@ -1,14 +1,14 @@
 import React from 'react';
 import Contact from './Contact'
+import Nav from './Nav'
 import {Link} from 'react-router-dom'
-
-
 
 
 class MainPage extends React.Component {
     render() {
         return ( 
             <div>
+                <Nav></Nav>
                 <h1> Hello, I 'm <span className="highlight yellow">Chaokang</span>.</h1> 
                 <p className = "heading" >
                     You can also call me Vincent. 

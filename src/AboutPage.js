@@ -4,11 +4,11 @@ import Nav from './Nav'
 
 
 
-function PhotosPage() {
+function AboutPage() {
     return ( 
         <div>
             <Nav></Nav>
-            <h1>Photos</h1> 
+            <h1>About me</h1> 
              <p className = "heading" >
                
             </p>
@@ -21,4 +21,4 @@ function PhotosPage() {
     );
 }
 
-export default PhotosPage;
+export default AboutPage;
