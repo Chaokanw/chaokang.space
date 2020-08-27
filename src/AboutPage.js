@@ -4,21 +4,23 @@ import Nav from './Nav'
 
 
 
-function AboutPage() {
-    return ( 
-        <div>
-            <Nav></Nav>
-            <h1>About me</h1> 
-             <p className = "heading" >
-               
-            </p>
-           
-           <Construction>
-
-           </Construction>
+class AboutPage extends React.Component {
+    render() {
+        return ( 
+            <div>
+                <Nav></Nav>
+                <h1>About</h1> 
+                <p className = "heading" >
+                
+                </p>
             
-        </div>
-    );
+            <Construction>
+
+            </Construction>
+                
+            </div>
+        );
+    }
 }
 
 export default AboutPage;

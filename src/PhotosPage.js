@@ -4,21 +4,23 @@ import Nav from './Nav'
 
 
 
-function PhotosPage() {
-    return ( 
-        <div>
-            <Nav></Nav>
-            <h1>Photos</h1> 
-             <p className = "heading" >
-               
-            </p>
-           
-           <Construction>
-
-           </Construction>
+class PhotosPage extends React.Component {
+    render() {
+        return ( 
+            <div>
+                <Nav></Nav>
+                <h1>Photos</h1> 
+                <p className = "heading" >
+                
+                </p>
             
-        </div>
-    );
+            <Construction>
+
+            </Construction>
+                
+            </div>
+        );
+    }
 }
 
 export default PhotosPage;
