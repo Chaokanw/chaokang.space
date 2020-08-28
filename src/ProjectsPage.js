@@ -11,11 +11,11 @@ let previewList = [
 
     {"title": "Pixalsso - A Pixelate World", 
     "link": "/projects/Pixalsso",
-    "src": "/images/demos/pixalsso.png"},
+    "src": "/images/demos/Pixalsso.png"},
 
     {"title": "Weather Search Web Application",
      "link": "/projects/WeatherApp",
-     "src": "/images/demos/weatherApp.png"},
+     "src": "/images/demos/WeatherApp.png"},
 
      {"title": "Gomoku - Five in a Row",
      "link": "/projects/Gomoku",
