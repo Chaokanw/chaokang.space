@@ -6,19 +6,20 @@ import Preview from './Preview';
 
 let previewList = [
     {"title": "GraphiPy - A Universal Social Data Extractor",
-     "name": "GraphiPy",
      "link": "/projects/GraphiPy",
      "src": "/images/demos/GraphiPy.png"},
 
     {"title": "Pixalsso - A Pixelate World", 
-    "name": "Pixalsso",
     "link": "/projects/Pixalsso",
     "src": "/images/demos/pixalsso.png"},
 
     {"title": "Weather Search Web Application",
-     "name": "Weather App",
      "link": "/projects/WeatherApp",
      "src": "/images/demos/weatherApp.png"},
+
+     {"title": "Gomoku - Five in a Row",
+     "link": "/projects/Gomoku",
+     "src": "/images/demos/Gomoku.png"},
 ]
 
 class ProjectsPage extends React.Component {
@@ -29,9 +30,9 @@ class ProjectsPage extends React.Component {
             <div>
                 <Nav></Nav>
                 <h1>Projects</h1> 
-                {/* <p className = "heading" >
-                
-                </p> */}
+                <p className = "heading" >
+
+                </p>
 
                 {previewList.map(
                     (preview, i) =>
@@ -40,7 +41,6 @@ class ProjectsPage extends React.Component {
                         title = {preview.title}
                         link = {preview.link}
                         src = {preview.src}
-                        name = {preview.name}
                     >
                     </Preview>
                 )} 
