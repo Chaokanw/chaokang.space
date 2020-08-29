@@ -93,13 +93,13 @@ class DemoPage extends React.Component {
                     {demos.map(
                         (demo, i) =>
                         <div className="demo-div" key = {i} >
-                            {/* <img 
+                            <img 
                                 className="demo-img" 
                                 onClick={handleClick} 
                                 alt={demo.description} 
                                 src={demo.src}
                             >
-                            </img> */}
+                            </img>
                         
                             <div className="description">{demo.description}</div>
                         

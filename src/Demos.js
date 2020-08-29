@@ -65,7 +65,7 @@ let pixalsso = {
         {
             src:"/images/demos/Pixalsso-01.png",
             description:"A post created by using Pixalsso"
-        },
+        }
     ]
 }
 
