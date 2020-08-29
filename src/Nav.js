@@ -27,9 +27,7 @@ class Nav extends React.Component {
                         <NavLink to="/about" activeClassName="selected">
                             <i className="fas fa-info-circle"></i>
                         </NavLink>
-                    </li>
-
-                    
+                    </li>    
                     
                 </ul>
 

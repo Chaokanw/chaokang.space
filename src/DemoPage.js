@@ -2,67 +2,9 @@ import React from 'react';
 import Construction from './Construction'
 import Nav from './Nav'
 import ErrorPage from './ErrorPage';
-
+import {projectList} from './Demos'
 // let name ="Error";
 
-
-let graphiPy = {
-    key: "GraphiPy",
-    title: "GraphiPy",
-    link: "https://pypi.org/project/GraphiPy/",
-    subtitle: "<a href='https://pypi.org/project/GraphiPy/' target='new' class ='yellow highlight'>GraphiPy</a> is a Universal Social Data Extractor.",
-    descriptions:[
-            "It simplifies the <span class ='pink highlight'>data extraction</span> process from different social media websites. "+
-            "Instead of having to study the different APIs of each website, just provide the API keys and use GraphiPy!",
-
-            "Currently, GraphiPy provides support to 7 different websites: Reddit, Facebook, LinkedIn, Pinterest, Tumblr, Twitter, YouTube"
-
-    ],
-    video:"https://www.youtube.com/embed/I_86Q3LQvNQ",
-    demos:[
-        {
-            src:"",
-            description:""
-        }
-    ]
-}
-
-let pixalsso = {
-    key:"Pixalsso",
-    title: "Pixalsso",
-    subtitle:"",
-    link:"https://pixalsso.herokuapp.com/",
-    descriptions:[ ""
-    ],
-    demos:[
-
-    ]
-}
-
-let weatherApp =  {
-    key:"WeatherApp",
-    title: "Weather App",
-    subtitle:"",
-    link:"http://csci571hw8-env.ybwvbvnvrs.us-east-2.elasticbeanstalk.com/",
-    descriptions: ["This is Weather App"
-    ],
-    demos:[
-
-    ]
-}
-
-let Gomoku =  {
-    key:"Gomoku",
-    title: "Gomoku",
-    subtitle:"",
-    descriptions: ["This is Gomoku "
-    ],
-    demos:[
-
-    ]
-}
-
-let projectList = [graphiPy, pixalsso, weatherApp, Gomoku]
 
 let projectMap = new Map();
 let project
@@ -71,14 +13,31 @@ for(project of projectList){
 }
 
 
-console.log(projectMap)
 
 
+function handleClick(e){
+    // e.preventDefault();
+    // console.log('The link was clicked.');
+    // console.log(e.currentTarget);
+    // console.log(e.currentTarget.alt);
+    var modal = document.getElementById("myModal");
+    var img = e.currentTarget;
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+  }
 
+
+function handleClose(e){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
 
 class DemoPage extends React.Component {
     
-
     render() {
         let title = this.props.match.params.title;
         // console.log(this.props.match.params.title)
@@ -94,6 +53,7 @@ class DemoPage extends React.Component {
         }
         else{
             let descriptions = project.descriptions;
+            let demos = project.demos;
             return ( 
                 <div>
                     
@@ -104,10 +64,15 @@ class DemoPage extends React.Component {
                     <p className="heading" dangerouslySetInnerHTML={{ __html: project.subtitle }}>
                         
                     </p>
-                    
-                    <p dangerouslySetInnerHTML={{ __html: project.descriptions[0] }}>
+
+                    {descriptions.map(
+                        (description, i)=>
+                        <p key = {i} dangerouslySetInnerHTML={{ __html: description }}>
                         
-                    </p>
+                        </p>
+                    )}
+                    
+                    
 
                     {project.link === undefined? "" : <p>
                         Project Link  <a  href={project.link} target="new" >
@@ -123,10 +88,34 @@ class DemoPage extends React.Component {
                         </div>
                     }
                     
-
-
-                    
-                    
+                    {demos.map(
+                        (demo, i)=>
+                        // <Demo
+                        //     key = {i}
+                        //     src = {demo.src}
+                        //     description = {demo.description}
+                        //     onClick={handleClick.bind(this)} 
+                        // >
+                        // </Demo>
+                        <div className="demo-div" key = {i} >
+                        <img 
+                            className="demo-img" 
+                            onClick={handleClick} 
+                            alt={demo.description} 
+                            src={demo.src}
+                            // data-record-id="hhhh"
+                        >
+                        </img>
+                        
+                        <div className="description">{demo.description}</div>
+                        
+                    </div>
+                    )}
+                    <div id="myModal" onClick={handleClose} className="modal">
+                        <span className="close">&times;</span>
+                        <img className="modal-content" id="img01"></img>
+                        <div id="caption"></div>
+                    </div>
                 </div>
 
                 

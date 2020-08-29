@@ -46,17 +46,7 @@ class ProjectsPage extends React.Component {
                 )} 
 
 
-                {/* <Preview>
-
-                </Preview>
-
-                <Preview>
-                    
-                </Preview>
-
-                <Preview>
-                    
-                </Preview> */}
+  
             {/* <Construction>
 
             </Construction> */}
