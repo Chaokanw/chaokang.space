@@ -60,7 +60,7 @@ let pixalsso = {
         },
         {
             src:"/images/demos/Pixalsso-detail.png",
-            description:"Detailed view on a post, user is able to like, save, and delete."
+            description:"Detailed view on a post, and the user is able to like, save, or delete."
         },
         {
             src:"/images/demos/Pixalsso-01.png",
