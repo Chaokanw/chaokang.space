@@ -91,28 +91,22 @@ class DemoPage extends React.Component {
                     {console.log(demos)}
                     
                     {demos.map(
-                        (demo, i)=>
-                        // <Demo
-                        //     key = {i}
-                        //     src = {demo.src}
-                        //     description = {demo.description}
-                        //     onClick={handleClick.bind(this)} 
-                        // >
-                        // </Demo>
-                        
+                        (demo, i) =>
                         <div className="demo-div" key = {i} >
-                            <img 
+                            {/* <img 
                                 className="demo-img" 
                                 onClick={handleClick} 
                                 alt={demo.description} 
                                 src={demo.src}
                             >
-                        </img>
+                            </img> */}
                         
-                        <div className="description">{demo.description}</div>
+                            <div className="description">{demo.description}</div>
                         
-                    </div>
+                        </div>
                     )}
+
+
                     <div id="myModal" onClick={handleClose} className="modal">
                         <span className="close">&times;</span>
                         <img className="modal-content" id="img01"></img>
