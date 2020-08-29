@@ -6,11 +6,7 @@ module.exports = function override(config, env) {
     //     publicPath:'/'
     // }
 
-    config.devServer = {
-        historyApiFallback:{
-            index:'build/index.html'
-        }
-    }
+    config.devServer.historyApiFallback =  true;
 
     return config;
   }
