@@ -3,7 +3,8 @@ import Construction from './Construction'
 import Nav from './Nav'
 import ErrorPage from './ErrorPage';
 import {projectList} from './Demos'
-// let name ="Error";
+
+
 
 
 let projectMap = new Map();
@@ -87,6 +88,7 @@ class DemoPage extends React.Component {
                             <div className="description">Video Demonstration</div>
                         </div>
                     }
+                    {console.log(demos)}
                     
                     {demos.map(
                         (demo, i)=>
@@ -97,14 +99,14 @@ class DemoPage extends React.Component {
                         //     onClick={handleClick.bind(this)} 
                         // >
                         // </Demo>
+                        
                         <div className="demo-div" key = {i} >
-                        <img 
-                            className="demo-img" 
-                            onClick={handleClick} 
-                            alt={demo.description} 
-                            src={demo.src}
-                            // data-record-id="hhhh"
-                        >
+                            <img 
+                                className="demo-img" 
+                                onClick={handleClick} 
+                                alt={demo.description} 
+                                src={demo.src}
+                            >
                         </img>
                         
                         <div className="description">{demo.description}</div>
