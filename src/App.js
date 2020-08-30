@@ -13,15 +13,14 @@ import ErrorPage from './ErrorPage';
 function App() {
     return ( 
         <div className = "App" >
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
-                    <Route path="/" exact component={MainPage} /> 
+                    <Route path="/" exact component={MainPage} />
                     <Route path="/projects" exact component={ProjectsPage} /> 
                     <Route path="/projects/:title" component={DemoPage} />
                     <Route path="/photos" exact component={PhotosPage} />
-                    <Route path="/about" component={AboutPage} />
-                    <Route path='*' exact={true} component={ErrorPage} />
-
+                    <Route path="/about" exact component={AboutPage} />
+                    <Route path='/*' exact={true} component={ErrorPage} />
                 </Switch>
    
             </Router>
