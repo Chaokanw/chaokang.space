@@ -81,6 +81,12 @@ class DemoPage extends React.Component {
                             </a>
                     </p>}
 
+                    {project.download === undefined? "" : <p>
+                        Download Link  <a  href={project.download} target="new" >
+                            <i className="fas fa-download"></i> <span className="highlight blue">Click me!</span>
+                            </a>
+                    </p>}
+
                     {project.video === undefined? "" : 
                         <div className="video-div">
                             <iframe src={project.video} allow="fullscreen" >    

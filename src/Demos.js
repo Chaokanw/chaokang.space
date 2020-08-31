@@ -72,11 +72,45 @@ let pixalsso = {
 let weatherApp =  {
     key:"WeatherApp",
     title: "Weather App",
-    subtitle:"",
+    subtitle:"<span class='highlight yellow'>Weather</span> Search Web Application",
     link:"http://csci571hw8-env.ybwvbvnvrs.us-east-2.elasticbeanstalk.com/",
-    descriptions: ["This is Weather App"
+    descriptions: [
+        "It is a full-stack web application for users to <span class='highlight pink'>search&nbsp;weather</span> information based on geolocation input or IP address."
     ],
     demos:[
+        {
+            src:"/images/demos/WeatherApp-landing.png",
+            description:"Landing Page: Users can manually enter the address or use current location"
+        },
+        {
+            src:"/images/demos/WeatherApp-autocomplete.png",
+            description:"Auto-complete for the city input"
+        },
+        {
+            src:"/images/demos/WeatherApp-current.png",
+            description:"Search Result for New York's current weather"
+        },
+        {
+            src:"/images/demos/WeatherApp-twitter.png",
+            description:"Users are able to post a tweet about current weather"
+        },
+        {
+            src:"/images/demos/WeatherApp-hourly.png",
+            description:"Hourly humidity of New York City"
+        },
+        {
+            src:"/images/demos/WeatherApp-weekly.png",
+            description:"Weekly weather of New York City"
+        },
+        {
+            src:"/images/demos/WeatherApp-detail.png",
+            description:"Weather Forecast of New York City on 08/01/2020"
+        },
+        {
+            src:"/images/demos/WeatherApp-favorite.png",
+            description:"Users are able to save location into the favorite list"
+        }
+
 
     ]
 }
@@ -84,10 +118,47 @@ let weatherApp =  {
 let Gomoku =  {
     key:"Gomoku",
     title: "Gomoku",
-    subtitle:"",
-    descriptions: ["This is Gomoku "
+    subtitle:"<span class='yellow highlight'>Gomoku</span> - Five in a Row",
+    // download:,
+    descriptions: [
+        "It is an abstract strategy <span class='pink highlight'>board game</span>. "+
+        "It is played with black and white stones on a 15×15 grid intersections board. "+
+        "Two players alternate turns placing a stone of their color on an empty intersection. The winner is the first player to form an unbroken chain of five stones horizontally, vertically, or diagonally.  "
     ],
     demos:[
+        {
+            src:"/images/demos/Gomoku-main.png",
+            description:"Main scene"
+        },
+        {
+            src:"/images/demos/Gomoku-user.png",
+            description:"User need to sign in to start the game"
+        },
+        {
+            src:"/images/demos/Gomoku-start.png",
+            description:"Game scene: users' records will be displayed on the upper-right"
+        },
+        {
+            src:"/images/demos/Gomoku-game.png",
+            description:"Game in progress"
+        },
+        {
+            src:"/images/demos/Gomoku-instruction.png",
+            description:"Instruction about the game"
+        },
+        {
+            src:"/images/demos/Gomoku-history.png",
+            description:"History records"
+        },
+        {
+            src:"/images/demos/Gomoku-setting.png",
+            description:"Settings: users are able to turn on/off the sound and switch the language"
+        },
+        {
+            src:"/images/demos/Gomoku-language.png",
+            description:"Change the Language to Chinese"
+        }
+        
 
     ]
 }
