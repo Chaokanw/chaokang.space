@@ -19,7 +19,7 @@ let previewList = [
 
      {"title": "Gomoku - Five in a Row",
      "link": "/projects/Gomoku",
-     "src": "/images/demos/Gomoku.png"},
+     "src": "/images/demos/Gomoku.png"}
 ]
 
 class ProjectsPage extends React.Component {
@@ -33,7 +33,6 @@ class ProjectsPage extends React.Component {
                 <p className = "heading" >
 
                 </p>
-                {console.log(previewList)}
                 {previewList.map(
                     (preview, i) =>
                     <Preview
