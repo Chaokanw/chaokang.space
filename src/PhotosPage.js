@@ -26,7 +26,7 @@ let previewList = [
 
      {"title": "Chifeng, Inner Mongolia ",
       "link": "/photos/Chifeng",
-      "src": "/images/photos/chifeng.jpg"},
+      "src": "/images/photos/Chifeng.jpg"},
 
      {"title": "La La Land",
       "link": "/photos/LosAngeles",
