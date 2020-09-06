@@ -18,7 +18,7 @@ let previewList = [
 
      {"title": "Summertime Kansai",
      "link": "/photos/Kansai",
-     "src": "/images/photos/Japan.jpg"},
+     "src": "/images/photos/osaka01.jpg"},
 
     {"title": "Joshua Tree",
      "link": "/photos/Joshua",
